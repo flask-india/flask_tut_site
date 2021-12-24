@@ -1,0 +1,60 @@
+site_name: Flask-India Tutorial
+
+site_author: "Tanmoy Karmokar and Arun K Soman"
+nav:
+  - "Flask-India Tutorial": "index.md"
+  - "Flask Introduction":
+    - "Flask": "chapter_1/flask_framework.md"
+    - "Flask installation": "chapter_1/flask_installation.md"
+    - "Getting Started With Flask": "chapter_1/getting_started_with_flask.md"
+  - "Flask CRUD Application":
+    - "Introduction": "chapter_2/introduction.md"
+    # - "Creating Package": "chapter_2/creating_package.md"
+
+theme:
+  name: material
+  icon:
+    admonition:
+      <type>: <icon>
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      primary: teal
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - header.autohide
+
+# plugins: []
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/termynal.js
+  - javascripts/custom.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/termynal.css
+  
